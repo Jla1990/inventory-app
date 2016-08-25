@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>LendingTree.com Forms Style Guide</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- LendingTree Master CSS -->
+    <link href="css/lendingtree-master.css" rel="stylesheet">
+    
+    <!-- LendingTree Master Form CSS -->
+    <link href="css/lendingtree-forms.css" rel="stylesheet">
+    
+    <!-- Open Sans Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- jcf scripts and styles -->
+    <link rel="stylesheet" href="css/lendingtree-forms.css">
+	<script src="js/jcf/jquery.js"></script>
+	<script src="js/jcf/jcf.js"></script>
+	<script src="js/jcf/jcf.file.js"></script>
+	<script src="js/jcf/jcf.radio.js"></script>
+	<script src="js/jcf/jcf.range.js"></script>
+	<script src="js/jcf/jcf.button.js"></script>
+	<script src="js/jcf/jcf.number.js"></script>
+	<script src="js/jcf/jcf.select.js"></script>
+	<script src="js/jcf/jcf.checkbox.js"></script>
+	<script src="js/jcf/jcf.textarea.js"></script>
+	<script src="js/jcf/jcf.scrollable.js"></script>
+	<script>
+		$(function() {
+			jcf.replaceAll();
+			jcf.destroy( 'Button' )
+		});
+		
+	</script>
+</head>
+
+  <body>
+    
+    
+
+    <div class="container tb-padding80">
+        <div class="row">
+            <div class="col-sm-12">
+                <span class="input input--yoshiko">
+					<input class="input__field input__field--yoshiko" type="text" id="input-10" />
+					<label class="input__label input__label--yoshiko" for="input-10">
+						<span class="input__label-content input__label-content--yoshiko" data-content="Bird's Color">Bird's Color</span>
+					</label>
+				</span>
+            </div>
+            <div class="col-sm-12">
+                <label>Address</label>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+
+    <div class="container tb-padding80">
+        <div class="row">
+            <div class="col-sm-12">
+                <p><strong>LENDINGTREE.COM FORMS</strong></p>
+                <h1>Select Menus</h1>
+            </div>
+            <div class="col-xs-12 col-sm-4">  
+                <select class="custom color" style="width: 300px;" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+					<option value="v1">Custom drop in area</option>
+					<option class="color red" value="v2">Option 1</option>
+					<option class="color green" value="v3">Option 2</option>
+					<option class="color blue" value="v4">Option 3</option>
+					<option value="v5">Option 4</option>
+					<option value="v6">Option 5</option>
+				</select>
+            </div>
+            <div class="col-xs-12 col-sm-8">
+				<button class="btn btn-orange">Click this button</button>
+            </div>
+        </div>
+    </div>
+    <div class="container tb-padding80">
+        <div class="row">
+            <div class="col-sm-12">
+            	<section class="demo-checkboxes">
+            		<h1>Checkboxes and radios</h1>
+            		<p>Focused and pressed states are also handled.</p>
+            			<div class="row">
+                			<div class="col-sm-12">
+            				<input type="checkbox" id="chk1" />
+            				<label title="Unchecked state" for="chk1">Unchecked</label>
+                			</div>
+            			</div>	
+            			<div class="row">
+                			<div class="col-sm-12">
+            				<input type="checkbox" checked="checked" id="chk2" />
+            				<label title="Checked state" for="chk2">Checked</label>
+            				</div>
+            			</div>
+            			<div class="row">
+                			<div class="col-sm-12">
+            				<input type="checkbox" disabled="disabled" id="chk3" />
+            				<label title="Checked state" for="chk3">Disabled</label>
+            				</div>
+            			</div>
+            			<div class="row">
+                			<div class="col-sm-12">
+            				<input type="checkbox" disabled="disabled" checked="checked" id="chk4" />
+            				<label title="Checked state" for="chk4">Disabled checked</label>
+            				</div>
+            			</div>
+
+
+            			<div class="row">
+                			<div class="col-sm-12">
+            				<input type="radio" name="rtest" id="rad1" />
+            				<label for="rad1" title="Unchecked state">Unchecked</label>
+            				</div>
+            			</div>
+            			<div class="row">
+                			<div class="col-sm-12">
+            				<input type="radio" name="rtest" checked="checked" id="rad2" data-jcf='{"wrapNative": true}' />
+            				<label for="rad2" title="Checked state">Checked</label>
+            				</div>
+            			</div>
+            			<div class="row">
+                			<div class="col-sm-12">
+            				<input type="radio" name="rtest" disabled="disabled" id="rad3" />
+            				<label for="rad3" title="Disabled state">Disabled</label>
+            				</div>
+            			</div>
+            			<div class="row">
+                			<div class="col-sm-12">
+            				<input type="radio" name="rtest" disabled="disabled" checked="checked" />
+            				<label for="rad3" title="Disabled state">Disabled checked</label>
+            				</div>
+            			</div>
+
+            	</section>
+            </div>
+        </div>
+    </div><!-- /.container -->
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.polymer-form.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/classie.js"></script>
+    <script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
+  </body>
+</html>

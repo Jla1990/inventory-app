@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+
+    <!-- LendingTree Master CSS -->
+    <link href="css/lendingtree-master.css" rel="stylesheet">
+
+    <!-- LendingTree Master Form CSS -->
+    <link href="css/lendingtree-forms.css" rel="stylesheet">
+
+    <!-- LendingTree Icon Font -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Open Sans Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+    <!-- Scroll Reveal Script -->
+    <script src="js/scrollreveal.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- MISCELLANEOUS CONVENTIONS -->
+
+    <i id="modal"></i>
+        <div class="row">
+          <!-- Button trigger modal -->
+             <a class="icon about home-video" data-toggle="modal" data-target="#myModal" rel="prettyPhoto"><img src="http://img.youtube.com/vi/CvLNpix7YAQ/mqdefault.jpg"> </a> <!-- Modal -->
+            <div aria-labelledby="myModalLabel" class="modal fade" id="myModal" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FHVKzn2NrzI" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-blue" data-dismiss="modal" type="button">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="js/ie10-viewport-bug-workaround.js"></script> -->
+    <script src="js/jquery.vide.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        //MODAL WINDOW
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+        })
+
+    </script>
+
+  </body>
+</html>

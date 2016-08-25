@@ -1,0 +1,1392 @@
+/*!
+ * LendingTree Master CSS Stylesheet v1.0
+ * Copyright 2011-2015 LendingTree, LLC
+ * Authors: Steve Kelly
+ * This style sheet is to serve as the master stylesheet for LendingTree.com. This sheet establishes global styles and Bootstrap overrides.
+ */
+
+
+/* ========  BOOTSTRAP OVERRIDES  ========== */
+html {
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.6em;
+  color: #666666;
+  background-color: #fff;
+}
+
+.jumbotron {
+    background: transparent;
+}
+
+/* ========  COLORS  ========== */
+
+/* Green */
+.green {
+    background: #7dc244; /* Sets the background color */
+}
+
+.green h1,
+.green h2,
+.green h3,
+.green h4,
+.green p,
+.green ol,
+.green ul,
+.green li,
+.green {
+    color: #ffffff; /* Ensures text within the parent is white */
+}
+
+h1.green,
+h2.green,
+h3.green,
+h4.green,
+p.green,
+ol.green,
+ul.green,
+li.green
+{
+    background: transparent; /* Overrides the background color class */
+    color: #7dc244; /* Sets the text color */
+}
+
+/* Dark Green */
+.darkgreen {
+    background: #629f43; /* Sets the background color */
+}
+
+.darkgreen h1,
+.darkgreen h2,
+.darkgreen h3,
+.darkgreen h4,
+.darkgreen p,
+.darkgreen ol,
+.darkgreen ul,
+.darkgreen li,
+.darkgreen {
+    color: #ffffff; /* Ensures text within the parent is white */
+}
+
+h1.darkgreen,
+h2.darkgreen,
+h3.darkgreen,
+h4.darkgreen,
+p.darkgreen,
+ol.darkgreen,
+ul.darkgreen,
+li.darkgreen
+{
+    background: transparent; /* Overrides the background color class */
+    color: #629f43;
+}
+
+/* Light Green */
+.lightgreen {
+    background: #ebf6e3; /* Sets the background color */
+}
+
+.lightgreen h1,
+.lightgreen h2,
+.lightgreen h3,
+.lightgreen h4,
+.lightgreen p,
+.lightgreen ol,
+.lightgreen ul,
+.lightgreen li,
+.lightgreen {
+    color: #333333; /* Ensures text within the parent is dark */
+}
+
+h1.lightgreen,
+h2.lightgreen,
+h3.lightgreen,
+h4.lightgreen,
+p.lightgreen,
+ol.lightgreen,
+ul.lightgreen,
+li.lightgreen
+{
+    background: transparent; /* Overrides the background color class */
+    color: #ebf6e3;
+}
+
+/* Blue */
+.blue{
+    background: #00aeef; /* Sets the background color */
+}
+
+.blue h1,
+.blue h2,
+.blue h3,
+.blue h4,
+.blue p,
+.blue ol,
+.blue ul,
+.blue li,
+.blue {
+    color: #ffffff; /* Ensures text within the parent is white */
+}
+
+h1.blue,
+h2.blue,
+h3.blue,
+h4.blue,
+p.blue,
+ol.blue,
+ul.blue,
+li.blue
+{
+    background: transparent; /* Overrides the background color class */
+    color: #00aeef; /* Sets the text color */
+}
+
+/* Dark Blue */
+.darkblue {
+    background: #2f86d4; /* Sets the background color */
+}
+
+.darkblue h1,
+.darkblue h2,
+.darkblue h3,
+.darkblue h4,
+.darkblue p,
+.darkblue ol,
+.darkblue ul,
+.darkblue li,
+.darkblue {
+    color: #ffffff; /* Ensures text within the parent is white */
+}
+
+h1.darkblue,
+h2.darkblue,
+h3.darkblue,
+h4.darkblue,
+p.darkblue,
+ol.darkblue,
+ul.darkblue,
+li.darkblue
+{
+    background: transparent; /* Overrides the background color class */
+    color: #2f86d4; /* Sets the text color */
+}
+
+/* Light Blue */
+.lightblue {
+    background: #edf5f8; /* Styles the background */
+}
+
+.lightblue h1,
+.lightblue h2,
+.lightblue h3,
+.lightblue h4,
+.lightblue p,
+.lightblue ol,
+.lightblue ul,
+.lightblue li,
+.lightblue {
+    color: #333333; /* Ensures text within the parent is dark */
+}
+
+h1.lightblue,
+h2.lightblue,
+h3.lightblue,
+h4.lightblue,
+p.lightblue,
+ol.lightblue,
+ul.lightblue,
+li.lightblue
+{
+    background: transparent; /* Overrides the background color class */
+    color: #edf5f8;
+}
+
+/* Orange */
+.orange {
+    background: #ffa800; /* Styles the background */
+}
+
+.orange h1,
+.orange h2,
+.orange h3,
+.orange h4,
+.orange p,
+.orange ol,
+.orange ul,
+.orange li,
+.orange {
+    color: #ffffff; /* Ensures text within the parent is white */
+}
+
+h1.orange,
+h2.orange,
+h3.orange,
+h4.orange,
+p.orange,
+ol.orange,
+ul.orange,
+li.orange
+{
+    background: transparent; /* Overrides the background color class */
+    color: #ffa800;
+}
+
+/* Dark Orange */
+.darkorange {
+    background: #ff9900; /* Sets the background color */
+}
+
+.darkorange h1,
+.darkorange h2,
+.darkorange h3,
+.darkorange h4,
+.darkorange p,
+.darkorange ol,
+.darkorange ul,
+.darkorange li,
+.darkorange {
+    color: #ffffff; /* Ensures text within the parent is white */
+}
+
+h1.darkorange,
+h2.darkorange,
+h3.darkorange,
+h4.darkorange,
+p.darkorange,
+ol.darkorange,
+ul.darkorange,
+li.darkorange
+{
+    background: transparent; /* Overrides the background color class */
+    color: #ff9900;
+}
+
+/* Purple */
+.purple {
+    background: #a3509f; /* Sets the background color */
+}
+
+.purple h1,
+.purple h2,
+.purple h3,
+.purple h4,
+.purple p,
+.purple ol,
+.purple ul,
+.purple li,
+.purple {
+    color: #ffffff; /* Ensures text within the parent is white */
+}
+
+h1.purple,
+h2.purple,
+h3.purple,
+h4.purple,
+p.purple,
+ol.purple,
+ul.purple,
+li.purple
+{
+    background: transparent; /* Overrides the background color class */
+    color: #a3509f;
+}
+
+/* Red */
+.red {
+    background: #ff4d07; /* Styles the background */
+}
+
+.red h1,
+.red h2,
+.red h3,
+.red h4,
+.red p,
+.red ol,
+.red ul,
+.red li,
+.red {
+    color: #ffffff; /* Ensures text within the parent is white */
+}
+
+h1.red,
+h2.red,
+h3.red,
+h4.red,
+p.red,
+ol.red,
+ul.red,
+li.red
+{
+    background: transparent; /* Overrides the background color class */
+    color: #ff4d07;
+}
+
+/* Dark Gray */
+.darkgray {
+    background: #333333; /* Styles the background */
+}
+
+.darkgray h1,
+.darkgray h2,
+.darkgray h3,
+.darkgray h4,
+.darkgray p,
+.darkgray ol,
+.darkgray ul,
+.darkgray li,
+.darkgray {
+    color: #ffffff; /* Ensures text within the parent is white */
+}
+
+h1.darkgray,
+h2.darkgray,
+h3.darkgray,
+h4.darkgray,
+p.darkgray,
+ol.darkgray,
+ul.darkgray,
+li.darkgray
+{
+    background: transparent; /* Overrides the background color class */
+    color: #333333;
+}
+
+/* Gray */
+.gray {
+    background: #a3a3a3; /* Sets the background color */
+}
+
+.gray h1,
+.gray h2,
+.gray h3,
+.gray h4,
+.gray p,
+.gray ol,
+.gray ul,
+.gray li,
+.gray {
+    color: #ffffff; /* Ensures text within the parent is white */
+}
+
+h1.gray,
+h2.gray,
+h3.gray,
+h4.gray,
+p.gray,
+ol.gray,
+ul.gray,
+li.gray
+{
+    background: transparent; /* Overrides the background color class */
+    color: #a3a3a3;
+}
+
+/* Light Gray */
+.lightgray {
+    background: #e1e1e1; /* Sets the background color */
+}
+
+.lightgray h1,
+.lightgray h2,
+.lightgray h3,
+.lightgray h4,
+.lightgray p,
+.lightgray ol,
+.lightgray ul,
+.lightgray li,
+.lightgray {
+    color: #333333; /* Ensures text within the parent is white */
+}
+
+h1.lightgray,
+h2.lightgray,
+h3.lightgray,
+h4.lightgray,
+p.lightgray,
+ol.lightgray,
+ul.lightgray,
+li.lightgray
+{
+    background: transparent; /* Overrides the background color class */
+    color: #e1e1e1;
+}
+
+/* Lightest Gray */
+.lightestgray {
+    background: #f5f5f5; /* Sets the background color */
+}
+
+.lightestgray h1,
+.lightestgray h2,
+.lightestgray h3,
+.lightestgray h4,
+.lightestgray p,
+.lightestgray ol,
+.lightestgray ul,
+.lightestgray li,
+lightestgray {
+    color: #333333; /* Ensures text within the parent is dark */
+}
+
+h1.lightestgray,
+h2.lightestgray,
+h3.lightestgray,
+h4.lightestgray,
+p.lightestgray,
+ol.lightestgray,
+ul.lightestgray,
+li.lightestgray
+{
+    background: transparent; /* Overrides the background color class */
+    color: #f5f5f5;
+}
+
+
+/* ========  !TYPOGRAPHY  ========== */
+a {
+  color: #00aeef;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #2f86d4;
+  text-decoration: underline;
+}
+
+li strong {
+  color: #333;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+}
+
+hr.40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+hr.60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+hr.80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+hr.100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 1.3;
+  color: #333333;
+  letter-spacing: -.01em;
+  margin: 0;
+}
+
+h1,
+.h1 {
+  font-size: 2.857em;
+  margin-bottom: 1.25em;
+}
+h2,
+.h2 {
+  font-size: 1.93em;
+  margin-bottom: 1.25em;
+}
+h3,
+.h3 {
+  font-size: 1.29em;
+  font-weight: 700;
+  margin-bottom: 1.8em;
+}
+@media (max-width: 768px) {
+    h3,
+    .h3 {margin-bottom: .5em;
+        }
+}
+h4,
+.h4 {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 1.8em;
+  text-transform: uppercase;
+}
+p {
+  margin: 0 0 10px;
+  margin-bottom: 2em;
+  line-height: 1.7em;
+}
+ul,
+ol {
+  padding-left: 20px; /* Eliminates natural list indent */
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+
+ul li,
+ol li {
+    padding: 0 0 1em 0;
+    line-height: 1.4em;
+}
+
+ul.no-bullets,
+ul.checklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.checklist {
+    margin-bottom: 50px; /* Style guide dictates 80px below a checklist. 50px accounts for the padding under the last list item */
+}
+
+ul.checklist li,  {
+    position: relative;
+    padding: 0 0 1.3em 2.5em;
+    font-size: 1.29em;
+    line-height: 1.4em;
+}
+
+ul.checklist li:before {
+    font-family: 'lt';
+    display: inline-block;
+    font-size: 1.5em;
+    line-height: 0;
+    margin-left: - 1.5em;
+    width: 1.5em;
+    color: #7ac142;
+    content: '\e651';
+    position: absolute;
+    left: 0;
+    top: .5em;
+
+}
+
+p a {
+    font-size: 1em;
+}
+
+
+/* ========  BUTTONS  ========== */
+
+.btn {
+  display: inline-block;
+  padding: .6em 2.1em;
+  margin: 40px 0 0 0;
+  font-size: 1.29em;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #fff;
+  transition: all 0.1s ease;
+}
+
+p + .btn,
+ul + .btn,
+ol + .btn {
+    margin-top: 20px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #fff;
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.btn span
+{
+  display: inline-block;
+  float: right;
+  width: 1em;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 800;
+  margin: .2em -1.6em 0 .6em;
+  padding: 0;
+  pointer-events: none;
+}
+
+/* Button with arrow */
+.btn-arrow,
+.btn-arrow:hover,
+.btn-orange:active,
+.btn-orange:focus
+{
+  background-image: url('../images/btn-arrow.svg');
+  background-size: 11px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center; /* Places background image 20px from the right side */
+  padding-right: 2.7em; /* Adjusts the right padding of the button to allow for the arrow */
+}
+
+/* orange button */
+.btn-orange {
+    background-color: #ffa800;
+    text-shadow: 0 1px 1px #d28c00;
+}
+
+.btn-orange:hover,
+.btn-orange:active,
+.btn-orange:focus {
+    background-color: #ff9200;
+}
+
+/* blue button */
+.btn-blue {
+    background-color: #00aeef;
+    text-shadow: 0 1px 1px #009ed9;
+}
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus {
+    background-color: #2F86D4;
+}
+
+/* gray button */
+.btn-gray {
+    background-color: #e1e1e1;
+    color: #666666;
+}
+.btn-gray:hover,
+.btn-gray:active,
+.btn-gray:focus {
+    color: #666666;
+    background-color: #c1c1c1;
+}
+
+@media (max-width: 480px) {
+	.btn {
+    	margin: 20px auto;
+    }
+}
+
+/* ========  SECTION PADDINGS  ========== */ /* (tb-padding = top-bottom padding. Used for content blocks and sections. 10px and 20px subtracted to account for Heading margin and bottom paragraph margin) */
+
+.padding0 {
+	padding:0px;
+}
+
+.lr-padding0 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.tb-padding0 {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.padding20 {
+	padding:20;
+}
+
+.lr-padding20 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.tb-padding20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.padding40 {
+	padding:40;
+}
+
+.lr-padding40 {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.tb-padding40 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.padding60 {
+	padding: 60px;
+}
+
+.lr-padding60 {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.tb-padding60 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.padding80 {
+	padding: 80px;
+}
+
+.lr-padding80 {
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.tb-padding80 {
+	padding-top: 70px;
+	padding-bottom: 80px;
+}
+
+.padding140 {
+	padding: 140px;
+}
+
+.tb-padding140 {
+	padding-top: 130px;
+	padding-bottom: 100px;
+}
+
+@media (max-width: 768px) { /* Adjust & normalize section padding on tablets */
+    .tb-padding60, .tb-padding80, .tb-padding140 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+    }
+}
+@media (max-width: 480px) { /* Adjust & normalize section padding on mobile */
+    .tb-padding60, .tb-padding80, .tb-padding140 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+    }
+}
+
+/* ========  !BULLSEYES  ========== */
+.bullseye {
+    position: relative;
+    margin-bottom: 0;
+    background-size: cover;
+    background-position: center top;
+}
+
+.bullseye form {
+    background-color: rgba(255,255,255,.7);
+    padding: 35px 95px;
+    margin: 0;
+}
+
+.bullseye h1,
+.bullseye h2,
+.bullseye h3 {
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
+}
+
+.bullseye p {
+    color: #ffffff;
+}
+
+.bullseye h1 {
+    font-size: 3.857em;
+    margin-bottom: 24px;
+}
+
+.bullseye h2 {
+    margin-bottom: 20px;
+}
+
+.bullseye .disclosure, .bullseye .disclosure a {
+    color: rgba(255,255,255,.75);
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.bullseye .disclosure a:hover {
+    text-decoration: underline;
+}
+
+.bullseye .btn {
+    margin: 0;
+    width: 100%;
+}
+
+.bullseye-full {
+    height: 100vh;
+    padding: 147px 0 80px 0;
+}
+
+.bullseye-medium {
+    padding: 87px 0 60px 0;
+}
+
+.bullseye-slim, .bullseye-superslim {
+    padding: 45px 0 45px 0;
+}
+
+.bullseye-superslim form {
+    background-color: transparent;
+    padding: 0px 95px;
+}
+
+.bullseye-video {
+    padding: 87px 0 60px 0;
+    background-color: #000000;
+}
+
+.bullseye-video video {
+    opacity: .4 !important;
+}
+
+.bullseye-video form {
+    margin-bottom: 45px;
+}
+
+.bullseye-superslim p.disclosure {
+    text-align: center;
+}
+
+@media (max-width: 768px) { /* Adjust padding on tablets and phones */
+    .bullseye {
+        padding: 60px 0;
+    }
+
+    .bullseye form {
+    padding: 20px;
+    }
+}
+
+@media (max-width: 480px) { /* Adjust padding on tablets and phones */
+    .bullseye {
+        padding: 30px 0;
+    }
+
+    .bullseye .btn {
+    margin-top: 10px;
+    }
+}
+
+.bullseye-nav-down {
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    background: url('../images/nav-down.svg') center center no-repeat;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+
+.bullseye-nav-down:hover {
+    opacity: .8;
+}
+
+/* ========  SECTION BACKGROUNDS  ========== */
+
+.background-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+    min-height: 500px;
+    height: 100%;
+}
+
+.background-image p,
+.background-image ul,
+.background-image ol,
+.background-image li {
+    color: #333333;
+}
+
+/* ========  BILLBOARDS  ========== */
+
+/* DARK BILLBOARD */
+.billboard-dark h1,
+.billboard-dark h2,
+.billboard-dark h3,
+.billboard-dark h4,
+.billboard-dark p,
+.billboard-dark ol,
+.billboard-dark ul,
+.billboard-dark li,
+.billboard-dark {
+    color: #ffffff; /* Ensures text within the parent is white */
+}
+
+
+/* ISOLATED IMAGE */
+.isolated-image {
+   padding-top: 140px;
+   padding-bottom: 20px;
+}
+.isolated-image img {
+    position: relative;
+    top: -60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .bleed-bottom-content,
+    .isolated-image {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    }
+    .isolated-image img {
+        top: auto;
+    }
+}
+
+/* BLEED IMAGE RIGHT OR LEFT */
+.bleed-side {
+    overflow: hidden;
+/*     padding: 140px 0 60px 0; */
+}
+
+.bleed-side img {
+    position: relative;
+    top: -60px;
+    margin: 15px 0 -60px 0;
+}
+
+@media (max-width: 480px) { /* Makes image 100% on smaller devices so it stacks above or below content. */
+    .bleed-side img {
+    width: 100%;
+    top: auto;
+    margin: 0;
+    }
+}
+
+
+/* BLEED IMAGE BOTTOM LEFT OR BOTTOM RIGHT */
+.bleed-bottom {
+    overflow: hidden;
+}
+
+.bleed-bottom img {
+    position: absolute;
+    top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .bleed-bottom {
+    overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    }
+
+    .bleed-bottom img {
+    position: relative;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    }
+}
+
+/* BLEED IMAGE CENTER BOTTOM */
+.bleed-bottom-center {
+    overflow: hidden;
+    text-align: center;
+    padding: 70px 0 0 0;
+}
+
+.bleed-bottom-center img {
+    margin: auto;
+}
+
+.bleed-bottom-center p {
+    font-size: 1.29em;
+}
+
+@media (max-width: 480px) {
+    .bleed-bottom img {
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+}
+
+/* ========  CAROUSELS  ========== */
+
+.carousel-control {
+    width: 13%; /* Slight adjustment to the width of the controls. */
+}
+
+.carousel-nav-padding {
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background:none;
+    background-image: none;
+}
+
+.carousel-control span {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: auto;
+    top: 49%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.carousel-control-prev {
+    background-image: url('../images/carousel-control-prev.svg');
+    left: 65px;
+}
+
+.carousel-control-next {
+    background-image: url('../images/carousel-control-next.svg');
+}
+
+.carousel-indicators-blue li, .carousel-indicators-blue .active {
+    width: 14px;
+    height: 14px;
+    border: none;
+    background-color: #00aeef;
+    opacity: .5;
+    margin: 7px 10px;
+    border-radius: 100px;
+    line-height: 28px;
+}
+
+.carousel-indicators-blue .active {
+    opacity: 1;
+    border: 7px solid rgb(0, 174, 239);
+    border: 7px solid rgba(0, 174, 239, .3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    width: 28px;
+    height: 28px;
+    margin: 0 3px;
+}
+
+.carousel-indicators-white li, .carousel-indicators-white .active {
+    width: 14px;
+    height: 14px;
+    border: none;
+    background-color: #ffffff;
+    opacity: .5;
+    margin: 7px 10px;
+    border-radius: 100px;
+    line-height: 28px;
+}
+
+.carousel-indicators-white .active {
+    opacity: 1;
+    border: 7px solid rgb(255, 255, 255);
+    border: 7px solid rgba(255, 255, 255, .3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    width: 28px;
+    height: 28px;
+    margin: 0 3px;
+}
+
+@media (max-width: 768px) { /* Changes next & prev arrows to 40px on mobile devices */
+    .carousel-control span {
+    width: 40px;
+    height: 40px;
+    }
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+/* PRODUCT CAROUSELS */
+
+#product-carousel .carousel-indicators { /* Moves the indicators to the right side */
+    text-align: right;
+    right: 0;
+}
+
+#product-carousel .container-fluid {
+    padding: 0;
+}
+
+#product-carousel .container-fluid:first-child {  /* Targets only the container with the image */
+    height: 400px;
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+@media (max-width: 480px) {
+    #product-carousel .container-fluid:first-child { /* Changes height of main image on mobile */
+    height: 130px;
+    }
+
+    #product-carousel .carousel-indicators { /* Moves the indicators back to the center and down on mobile */
+    text-align: center;
+    bottom: 0;
+    }
+}
+
+.product-carousel-icon a {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 70px;
+    position: absolute;
+    top: -85px;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    text-align: center;
+    color: #2cace3;
+    font-size: 2.5em;
+    line-height: 70px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.product-carousel-icon a:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+
+}
+
+.carousel-product-icon {
+    font-size: 4.6em;
+    color: #7dc244;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* ========  !TABS  ========== */
+.tab-header {
+    padding: 80px 0 0 0;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+h1 + .nav-tabs, h1 + .nav-tabs.nav-justified { /* Adjusts top margin of tabs if h1 is above it */
+    margin-top: -20px;
+    margin-bottom: -14px;
+}
+
+.nav-tabs > li {
+  float: left;
+  margin-bottom: 0;
+}
+
+.nav-tabs > li > a {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  line-height: 1.42857143em;
+  border: 0;
+  border-radius: 0;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2cace3;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.nav-tabs > li > a:hover {
+  border: 0;
+  border-bottom: 5px solid #7dc244;
+  background: transparent;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #333;
+  cursor: default;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 5px solid #7dc244;
+}
+.nav-tabs.nav-justified {
+  width: 75%;
+  border-bottom: 0;
+  margin: 0 auto;
+}
+.nav-tabs.nav-justified > li {
+  float: none;
+}
+.nav-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 0;
+}
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+  border: 0;
+  border-bottom: 5px solid #7dc244;
+}
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > li > a {
+    border-bottom: 0;
+    border-radius: 0;
+  }
+  .nav-tabs.nav-justified > li > a:hover {
+    border: 0;
+    border-bottom: 5px solid #2cace3;
+    background: transparent;
+  }
+  .nav-tabs.nav-justified > .active > a,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:focus {
+      border-bottom: 5px solid #7dc244;
+  }
+}
+
+.nav-tabs.whitetabs > li > a,
+.nav-tabs.whitetabs > .active > a,
+.nav-tabs.nav-justified.whitetabs > .active > a {
+    color: #ffffff;
+}
+
+.nav-tabs.whitetabs > li > a:hover,
+.nav-tabs.nav-justified.whitetabs > .active > a,
+.nav-tabs.nav-justified.whitetabs > .active > a:hover,
+.nav-tabs.nav-justified.whitetabs > .active > a:focus {
+      border-bottom: 5px solid #ffffff;
+  }
+
+
+/* ========  MISCELLANEOUS ELEMENTS  ========== */
+
+/* =Clearfix (all browsers)
+--------------------------------*/
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+/* IE6 */
+* html .clearfix {height: 1%;}
+/* IE7 */
+*:first-child+html .clearfix {min-height: 1px;}
+
+@media (max-width: 768px) { /* Adjusts the size of a responsive image from the default of 100% to an override of 90% */
+    .img-responsive {
+        width: 90%;
+    }
+}
+
+.top0 {
+    top: 0 !important;
+}
+
+/* TOOLTIP */
+.tooltip {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+.tooltip-inner {
+  padding: 5px 10px;
+}
